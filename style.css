@@ -1,0 +1,96 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+.my-container {
+  max-width: 1140px;
+  padding: 0 15px;
+}
+
+.logo {
+  width: 28px;
+  animation-name: logo;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes logo {
+  40% {
+    color: red;
+  }
+  65% {
+    color: green;
+  }
+  85% {
+    color: fuchsia;
+    transform: scale(1.7);
+  }
+  100% {
+    color: blue;
+    transform: scale(1);
+  }
+}
+
+.menu {
+  text-align: center;
+}
+
+.menu-item {
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  background-color: rgb(190, 190, 130);
+}
+
+.menu-title {
+ position: relative;
+ padding: 20px 0;
+}
+
+.menu-title--underline {
+  border-bottom: 1px solid red;
+}
+
+.menu-title::after {
+  position: absolute;
+  content: "+";
+  width: 40px;
+  height: 40px;
+  transform: translateX(25px);
+  border: 1px solid black;
+  padding-bottom: 50px;
+  cursor: pointer;
+}
+
+.minus-icon {
+  position: relative;
+}
+
+.minus-icon::after {
+  position: absolute;
+  content: "-";
+  width: 40px;
+  height: 40px;
+  transform: translateX(25px);
+  border: 1px solid black;
+  padding-bottom: 50px;
+  cursor: pointer;
+}
+
+
+.menu-text {
+  display: none;
+}
+
+.menu-text--show {
+  display: block;
+}
