@@ -11,6 +11,22 @@
   {
      "word": "Peace",
      "translate": "Мир"
-  }
+  },
+  {
+    "word": "Weep",
+    "translate": "Плакать"
+ },
+ {
+  "word": "Deffinate",
+  "translate": "Определенный"
+},
+{
+  "word": "Honour",
+  "translate": "Честь, почет"
+},
+{
+  "word": "Apearance",
+  "translate": "Внешность, внешний вид"
+}
 
 ]
