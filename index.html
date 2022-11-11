@@ -22,7 +22,19 @@
     </nav>
   </header>
 
-  <div class="container my-container">
+  <div class="animated-text">
+    <div class="container my-container">
+      <div class="row">
+        <div class="col-12 col-md-12">
+          <h1 class="animated-text__title">
+            <strong class="animated-text__strong"></strong>
+          </h1>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container my-container dictionary">
     <div class="row">
       <div class="col-12 col-md-12">
         <ol class="menu"></ol>
@@ -30,6 +42,30 @@
     </div>
   </div>
 
+  <footer class="footer overlay">
+    <div class="container my-container">
+      <div class="row">
+        <div class="col-12 col-md-12">
+          <h2 class="footer__title">
+            &copy; Tursunbekov's dictionary 
+          </h2>
+        </div>
+      </div>
+    </div>
+  </footer>
+
   <script src="app.js"></script>
+  <script src="https://unpkg.com/ityped@1.0.2"></script>
+  <script>
+    const animatedText = document.querySelector(".animated-text__strong");
+
+    ityped.init(animatedText, {
+      showCursor: true,
+      strings: ["Coding your future", "Step by step"],
+      backDelay: 600,
+      backSpeed: 100,
+      typeSpeed: 200,
+    });
+  </script>
 </body>
 </html>

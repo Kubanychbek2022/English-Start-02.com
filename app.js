@@ -21,7 +21,7 @@ window.addEventListener("load", getWords);
         const li = document.createElement("li");
          li.classList.add("menu-item");
         li.innerHTML = `
-        <h1 class="menu-title">${word.word}</h1>
+        <h2 class="menu-title">${word.word}</h2>
         <h3 class="menu-text">${word.translate}</h3>
         `
         menu.appendChild(li);
@@ -41,4 +41,6 @@ window.addEventListener("load", getWords);
 xhr.send();
  }
 
- 
+const getDate = new Date();
+const footer = document.querySelector(".footer__title");
+footer.append(getDate.getFullYear());

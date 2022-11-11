@@ -12,6 +12,10 @@ body {
   margin: 0;
 }
 
+.header {
+  margin-bottom: 25px;
+}
+
 .my-container {
   max-width: 1140px;
   padding: 0 15px;
@@ -39,6 +43,20 @@ body {
     color: blue;
     transform: scale(1);
   }
+}
+
+.animated-text {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.animated-text__title {
+  text-align: center;
+}
+
+.dictionary {
+  margin-bottom: 35px;
+  text-align: center;
 }
 
 .menu {
@@ -103,7 +121,7 @@ body {
     height: 40px;
     transform: translateX(25px);
     border: 1px solid black;
-    padding-bottom: 35px;
+    padding-bottom: 10px;
     cursor: pointer;
   }
 
@@ -114,8 +132,37 @@ body {
     height: 40px;
     transform: translateX(25px);
     border: 1px solid black;
-    padding-bottom: 35px;
+    padding-bottom: 10px;
     cursor: pointer;
   }
   
+}
+
+.footer {
+  background-image: url(./img/photo-1612467968134-e58957756c7a.avif);
+  padding: 20px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.footer__title {
+  text-align: center;
+  color: #fff;
+}
+
+.overlay {
+  position: relative;
+  z-index: 1;
+}
+
+.overlay::after {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: "";
+  background-color: rgba(34, 37, 51, 0.4);
+  z-index: -1;
 }
