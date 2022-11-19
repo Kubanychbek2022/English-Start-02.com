@@ -59,8 +59,28 @@ body {
   text-align: center;
 }
 
+@media screen and (max-width: 1170px) {
+  .dictionary {
+    transform: translateX(-12px);
+  }
+}
+
 .menu {
   text-align: center;
+}
+
+.pronounce {
+  transform: translateY(16px);
+  cursor: pointer;
+}
+
+.pronounce a {
+  transition: all 2ms;
+  cursor: pointer;
+}
+
+.pronounce a:hover {
+  fill: blue;
 }
 
 .menu-item {
