@@ -44,6 +44,28 @@ window.addEventListener("load", getWords);
 xhr.send();
  }
 
+
+ function greetForTime () {
+
+  const getDate = new Date();
+const getHour = getDate.getHours();
+
+const showTime = document.querySelector(".show-time");
+
+  if (getHour>=04 && getHour<=11) {
+    showTime.innerText = "Good morning";
+  } else if (getHour>=11 && getHour<=15) {
+    showTime.innerText = "Good afternoon";
+  } else if (getHour>= 15 && getHour<=23) {
+    showTime.innerText = "Good evening";
+  } else {
+    showTime.innerText = "Good night";
+  }
+}
+
+greetForTime();
+
+
 const getDate = new Date();
 const footer = document.querySelector(".footer__title");
 footer.append(getDate.getFullYear());
