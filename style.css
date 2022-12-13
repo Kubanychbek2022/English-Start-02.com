@@ -12,6 +12,31 @@ body {
   margin: 0;
 }
 
+.present-window {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background-color: rgb(52, 52, 170);
+  z-index: 1;
+  color: #fff;
+  width: 100vw;
+  height: 100vh;
+}
+
+
+.text-1 {
+  font-size: 45px;
+  transform: translateY(-140px)
+  translateX(70px);
+}
+
+.text-2 {
+  font-size: 35px;
+  transform: translateY(90px)
+  translateX(-20px);
+}
+
 .header {
   margin-bottom: 25px;
 }
