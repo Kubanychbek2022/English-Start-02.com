@@ -44,6 +44,11 @@ window.addEventListener("load", getWords);
 xhr.send();
  }
 
+ setTimeout(()=> {
+  document.querySelector(".present-window").remove();
+
+ }, 4000);
+
 
  function greetForTime () {
 
